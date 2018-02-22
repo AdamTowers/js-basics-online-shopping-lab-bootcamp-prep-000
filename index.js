@@ -33,7 +33,7 @@ function viewCart() {
     for (var i=0; i < cart.length; i++) {
     itemsInCart.push(`${Object.keys(cart[i])} at $${Object.values(cart[i])}`)
     }
-    return console.log(`In your cart, you have ${itemsInCart.join(`, `)-1}.`)
+    return console.log(`In your cart, you have ${itemsInCart.join(`, `)-1} and ${itemsInCart[-1]}.`)
   }
 }
 
