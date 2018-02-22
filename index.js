@@ -21,7 +21,12 @@ function viewCart() {
   var itemsInCart = [];
   if (cart.length == 0) {
     return console.log('Your shopping cart is empty.');
-  } else {
+  } else if {
+    for (var i=0; i < cart.length; i++) {
+    itemsInCart.push(`${Object.keys(cart[i])} at $${Object.values(cart[i])}`)
+    }
+    return console.log(`In your cart, you have ${itemsInCart.join(`, `)}.`)
+  } else if {
     for (var i=0; i < cart.length; i++) {
     itemsInCart.push(`${Object.keys(cart[i])} at $${Object.values(cart[i])}`)
     }
