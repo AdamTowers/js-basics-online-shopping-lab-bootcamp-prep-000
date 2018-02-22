@@ -24,7 +24,7 @@ function viewCart() {
   } else if (cart.length == 1) {
     itemsInCart.push(`${Object.keys(cart[0])} at $${Object.values(cart[0])}`)
     return console.log(`In your cart, you have ${itemsInCart}.`)
-  } else if {
+  } else {
     for (var i=0; i < cart.length; i++) {
     itemsInCart.push(`${Object.keys(cart[i])} at $${Object.values(cart[i])}`)
     }
