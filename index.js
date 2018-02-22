@@ -33,7 +33,8 @@ function viewCart() {
     for (var i=0; i < cart.length; i++) {
     itemsInCart.push(`${Object.keys(cart[i])} at $${Object.values(cart[i])}`)
     }
-    return console.log(`In your cart, you have ${itemsInCart.join(itemsInCart.slice(0, itemsInCart.length - 1))} and ${itemsInCart.slice(-1)}.`)
+    itemsInCart.join(', ');
+    return console.log(`In your cart, you have ${itemsInCart.slice(0, itemsInCart.length - 1)} and ${itemsInCart.slice(-1)}.`)
   }
 }
 
