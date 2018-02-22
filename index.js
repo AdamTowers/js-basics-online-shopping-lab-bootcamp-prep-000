@@ -42,7 +42,7 @@ function total() {
   //iterates through arrat, possibly with Object.values(cart[i])
   var totalOfCart = [];
   for (var i = 0; i < cart.length; i++) {
-    totalOfCart.push(cart.values(cart[i])+=);
+    totalOfCart.push(Object.values(cart[i])+=);
   }
   //return sum of each value
   return totalOfCart;
