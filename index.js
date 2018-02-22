@@ -38,8 +38,6 @@ function viewCart() {
 }
 
 function total() {
-  //return sum of 'cart' values with dollar sign
-  //iterates through arrat, possibly with Object.values(cart[i])
   var totalOfCart = [];
   for (var i = 0; i < cart.length; i++) {
     totalOfCart.push(Object.values(cart[i])+=);
