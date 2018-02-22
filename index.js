@@ -39,7 +39,7 @@ function viewCart() {
 
 function total() {
   for (var i = 0; i < cart.length; i++) {
-    return Object.values(cart[i])+=;
+    return Object.values(cart[i])+=
   }
 }
 
