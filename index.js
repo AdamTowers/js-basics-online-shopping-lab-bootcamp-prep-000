@@ -23,7 +23,7 @@ function viewCart() {
   } else {
     var itemsInCart = [];
     for (var i=0; i < cart.length; i++) {
-    itemsInCart.push(`${Object.keys(cart)} at $${cart.hasOwnProperty()}`)
+    itemsInCart.push(`${Object.keys(cart[0])} at $${cart.hasOwnProperty()}`)
     }
     return console.log(`In your cart, you have ${itemsInCart.join(`, `)}.`)
   }
