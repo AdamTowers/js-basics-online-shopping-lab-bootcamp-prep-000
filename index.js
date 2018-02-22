@@ -38,7 +38,7 @@ function viewCart() {
 }
 
 function total() {
-  // write your code here
+  //return sum of 'cart' values with dollar sign
 }
 
 function removeFromCart(item) {
