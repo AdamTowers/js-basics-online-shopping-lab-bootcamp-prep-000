@@ -26,12 +26,12 @@ function viewCart() {
     return console.log(`In your cart, you have ${itemsInCart}.`)
   } else if (cart.length == 2) {
     for (var i=0; i < 2; i++) {
-    itemsInCart.push(`${Object.keys(cart[i])} at $${Object.values(cart[i])}`)
+      itemsInCart.push(`${Object.keys(cart[i])} at $${Object.values(cart[i])}`)
     }
     return console.log(`In your cart, you have ${itemsInCart.join(' and ')}.`)
   } else {
     for (var i=0; i < cart.length; i++) {
-    itemsInCart.push(`${Object.keys(cart[i])} at $${Object.values(cart[i])}`)
+      itemsInCart.push(`${Object.keys(cart[i])} at $${Object.values(cart[i])}`)
     }
     return console.log(`In your cart, you have ${itemsInCart.slice(0, itemsInCart.length - 1)} and ${itemsInCart.slice(-1)}.`)
   }
