@@ -45,7 +45,7 @@ function total() {
     totalOfCart.push(Object.values(cart[i])+=);
   }
   //return sum of each value
-  return
+  return totalOfCart;
 }
 
 function removeFromCart(item) {
