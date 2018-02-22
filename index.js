@@ -40,9 +40,8 @@ function viewCart() {
 function total() {
   var totalOfCart = [];
   for (var i = 0; i < cart.length; i++) {
-    Object.values(cart[i])+=;
+    return Object.values(cart[i])+=;
   }
-  return totalOfCart;
 }
 
 function removeFromCart(item) {
