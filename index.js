@@ -18,10 +18,10 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  var itemsInCart = [];
   if (cart.length == 0) {
     return console.log('Your shopping cart is empty.');
-  } else if {
+  } else {
+    var itemsInCart = [];
     for (var i=0; i < cart.length; i++) {
     itemsInCart.push(`${Object.keys(cart[i])} at $${Object.values(cart[i])}`)
     }
