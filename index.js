@@ -28,7 +28,7 @@ function viewCart() {
     for (var i=0; i < cart.length; i++) {
     itemsInCart.push(`${Object.keys(cart[i])} at $${Object.values(cart[i])}`)
     }
-    return console.log(`In your cart, you have ${itemsInCart}.`)
+    return console.log(`In your cart, you have ${itemsInCart.join(' and ')}.`)
   } else {
     for (var i=0; i < cart.length; i++) {
     itemsInCart.push(`${Object.keys(cart[i])} at $${Object.values(cart[i])}`)
