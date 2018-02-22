@@ -40,10 +40,12 @@ function viewCart() {
 function total() {
   //return sum of 'cart' values with dollar sign
   //iterates through arrat, possibly with Object.values(cart[i])
+  var totalOfCart = [];
   for (var i = 0; i < cart.length; i++) {
     Object.values(cart[i])+=;
   }
   //return sum of each value
+  return
 }
 
 function removeFromCart(item) {
