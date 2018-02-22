@@ -10,11 +10,23 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- // write your code here
+  var itemName = item;
+  var itemPrice = Math.floor(Math.random() * 100) + 1;
+  cart.push({ [itemName]: itemPrice });
+  console.log(`${itemName} has been added to your cart.`);
+  return cart;
 }
 
 function viewCart() {
-  // write your code here
+  if (cart.length == 0) {
+    return console.log('Your shopping cart is empty.');
+  } else {
+    var itemsInCart = [];
+    for (var i=0; i < cart.length; i++) {
+    itemsInCart.push(`${cart[0]} at $${cart[0]}`)
+    }
+    return console.log(`In your cart, you have ${itemsInCart.join(`, `)}.`)
+  }
 }
 
 function total() {
